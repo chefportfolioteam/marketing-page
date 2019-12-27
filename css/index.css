@@ -1,0 +1,922 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  background-image: linear-gradient(#00adb5, #eeeeee);
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Indie Flower', cursive;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+.containerTop ul {
+  list-style: none;
+}
+.containerTop a {
+  color: #34495e;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+.containerTop .logo {
+  margin: -2% 0 0 0;
+  font-size: 1.45em;
+  width: 140px;
+  height: 110px;
+}
+.containerTop .main-nav {
+  display: flex;
+  margin: 1% 0 0 0;
+}
+.containerTop .main-nav a {
+  color: white;
+  font-size: 2rem;
+}
+.containerTop .main-nav a:hover {
+  color: #00adb5;
+}
+.containerTop .header {
+  padding-top: 4em;
+  border: 1px solid #a2a2a2;
+  background-color: black;
+  -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 130px;
+  border-bottom: 2px solid #00adb5;
+}
+@media (max-width: 1000px) {
+  .logo {
+    display: none;
+  }
+  .main-nav a {
+    display: flex;
+    margin: 0 100% 0 0;
+  }
+}
+.footer {
+  width: 100%;
+  border-top: 2px solid #00adb5;
+  background: black;
+}
+.footer p {
+  text-align: center;
+  color: white;
+  font-size: 1.6rem;
+  padding: 20px;
+}
+.footer .logobottom {
+  display: block;
+  margin: 0 auto;
+}
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Kanit Regular'), local('Kanit-Regular'), url(https://fonts.gstatic.com/s/kanit/v5/nKKZ-Go6G5tXcraVGwU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Kanit Regular'), local('Kanit-Regular'), url(https://fonts.gstatic.com/s/kanit/v5/nKKZ-Go6G5tXcraVGwU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Luckiest Guy';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Luckiest Guy Regular'), local('LuckiestGuy-Regular'), url(https://fonts.gstatic.com/s/luckiestguy/v10/_gP_1RrxsjcxVyin9l9n_j2hTd5z.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Righteous';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Righteous'), local('Righteous-Regular'), url(https://fonts.gstatic.com/s/righteous/v8/1cXxaUPXBpj2rGoU7C9WiHGA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Fredericka the Great';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Fredericka the Great'), local('FrederickatheGreat'), url(https://fonts.gstatic.com/s/frederickathegreat/v9/9Bt33CxNwt7aOctW2xjbCstzwVKsIBVV--SjxbI.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Kanit Regular'), local('Kanit-Regular'), url(https://fonts.gstatic.com/s/kanit/v5/nKKZ-Go6G5tXcraVGwU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Luckiest Guy';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Luckiest Guy Regular'), local('LuckiestGuy-Regular'), url(https://fonts.gstatic.com/s/luckiestguy/v10/_gP_1RrxsjcxVyin9l9n_j2hTd5z.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Righteous';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Righteous'), local('Righteous-Regular'), url(https://fonts.gstatic.com/s/righteous/v8/1cXxaUPXBpj2rGoU7C9WiHGA.ttf) format('truetype');
+}
+.one .bigimg {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+  border: 2px solid black;
+  border-radius: 25px;
+  position: relative;
+  z-index: -1;
+}
+.one .imgcont {
+  border: 1px solid white;
+  margin: -47% 5% 38% 15%;
+  width: 25%;
+  height: 25rem;
+  background-color: black;
+  color: white;
+  font-family: 'Luckiest Guy', cursive;
+  border-radius: 25px;
+  text-align: center;
+}
+.one .imgcont h2 {
+  font-size: 3rem;
+  font-family: 'Luckiest Guy', cursive;
+  margin: 2%;
+}
+.one .imgcont p {
+  margin: 2%;
+  font-size: 2rem;
+}
+.one .imgcont li {
+  font-size: 2rem;
+}
+.one .imgcont h3 {
+  background-color: #00adb5;
+  border: none;
+  color: white;
+  width: 70%;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 3rem;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 7% auto;
+}
+.firstImg {
+  height: 100px;
+  width: 100px;
+  color: white;
+}
+.home .topContent {
+  display: flex;
+  text-align: center;
+  color: white;
+}
+.home .secOne {
+  margin: 2%;
+}
+.home .secOne h2 {
+  color: white;
+  font-family: 'Luckiest Guy', cursive;
+}
+.home .secTwo {
+  margin: 2%;
+}
+.home .secTwo h2 {
+  color: white;
+  font-family: 'Luckiest Guy', cursive;
+}
+.home .secThree {
+  margin: 2%;
+}
+.home .secThree h2 {
+  color: white;
+  font-family: 'Luckiest Guy', cursive;
+}
+.home .topHeader {
+  width: 100%;
+  margin: -5% 0 0 0;
+}
+.home .content-section {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.home .content-section .text-content {
+  width: 48%;
+  padding-right: 1%;
+}
+.home .content-section .img-content {
+  width: 48%;
+  padding-left: 1%;
+}
+.home .content-section .img-content img {
+  border-radius: 10px;
+}
+.home .middlebtn {
+  display: flex;
+}
+.home .middlebtn h1 {
+  background-color: white;
+  font-family: 'Kanit', sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 5rem;
+  color: #00adb5;
+}
+.home .middlebtn .button {
+  flex-direction: column;
+  background-color: white;
+  color: #00adb5;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  margin: 0 auto;
+  font-size: 5rem;
+  font-family: 'Luckiest Guy', cursive;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+.home .middlebtn .button span {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 9rem;
+}
+.home .middlebtn .button:hover,
+.home .middlebtn h1 {
+  color: white;
+  background-color: #00adb5;
+}
+.home .middlebtn .button1 {
+  background-color: black;
+  margin: 0 auto;
+  margin-top: 2%;
+  height: 8rem;
+  font-size: 5rem;
+  border-radius: 10px;
+  color: white;
+  padding: 12px;
+}
+.home .middlebtn .button1:hover {
+  color: black;
+  background-color: white;
+}
+.home .testimon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2% 0 0 0;
+}
+.home .testimon h2 {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 5rem;
+  color: black;
+}
+.home .testimon h6 {
+  background-color: black;
+  color: white;
+  height: 50px;
+  width: 40%;
+  text-align: center;
+  padding: 15px 20px;
+  border-radius: 20px;
+  font-size: 1.7rem;
+}
+.home .test {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+  display: flex;
+  width: 50%;
+  border: 2px solid black;
+}
+.home .test::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.home .test img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+.home .test span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+.testimon1 {
+  display: flex;
+  justify-content: center;
+}
+.testimon1 .test1 {
+  text-align: center;
+  border: 3px solid black;
+  margin: 5% ;
+  border-radius: 20PX;
+}
+.testimon1 .bottomlogo {
+  width: 100%;
+  height: 20rem;
+  border-radius: 18PX;
+}
+.testimon1 h2 {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 5rem;
+  color: black;
+}
+.testimon1 p {
+  font-size: 3rem;
+  font-family: 'Luckiest Guy', cursive;
+}
+.button3 {
+  background-color: #00adb5;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  font-size: 3rem;
+  border-radius: 10px;
+  margin: 2% auto;
+  font-family: 'Luckiest Guy', cursive;
+  background-color: black;
+}
+.button3:hover {
+  background-color: white;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  font-size: 0;
+  border-radius: 10px;
+  margin: 2% auto;
+  font-family: 'Luckiest Guy', cursive;
+}
+.button3:hover:before {
+  font-size: 3rem;
+  content: attr(data-hover);
+}
+@media (min-width: 1001px) {
+  .logo3 {
+    display: none;
+  }
+  .imgcont {
+    height: 10rem;
+  }
+}
+@media (max-width: 1000px) {
+  .topContent {
+    margin: 15% 0 0 0;
+  }
+  .one .bigimg {
+    margin-top: 30%;
+  }
+  .one .imgcont {
+    border: 1px solid black;
+    margin: -47% 5% 10% 15%;
+    width: 25%;
+    height: 35rem;
+    background-color: black;
+    color: white;
+    font-family: 'Luckiest Guy', cursive;
+    border-radius: 25px;
+    text-align: center;
+  }
+  .one .imgcont .logo3 {
+    width: 100px;
+    height: 100px;
+  }
+  .one .imgcont h2 {
+    font-size: 3rem;
+    font-family: 'Luckiest Guy', cursive;
+    margin: 2%;
+  }
+  .one .imgcont p {
+    margin: 2%;
+    font-size: 2rem;
+  }
+  .one .imgcont li {
+    font-size: 2rem;
+  }
+  .one .imgcont h3 {
+    background-color: #00adb5;
+    color: white;
+    width: 70%;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 3rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 7% auto;
+  }
+  .home .testimon .th2 {
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 40%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 1.7rem;
+    margin: 1%;
+  }
+  .home .middlebtn .button {
+    flex-direction: column;
+    background-color: white;
+    color: #00adb5;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    margin: 0 auto;
+    font-size: 3rem;
+    font-family: 'Luckiest Guy', cursive;
+    border-radius: 20px;
+    border: 2px solid black;
+  }
+  .home .middlebtn .button span {
+    font-size: 6rem;
+  }
+  .home .middlebtn .button1 {
+    background-color: black;
+    margin: 0 auto;
+    margin-top: 2%;
+    height: 5rem;
+    font-size: 2rem;
+    border-radius: 10px;
+    color: white;
+    padding: 12px;
+  }
+  .testimon1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .testimon1 p {
+    font-size: 2rem;
+  }
+  .testimon1 .test1 {
+    text-align: center;
+    width: 100%;
+    border: 3px solid black;
+    margin: 5% ;
+    border-radius: 20PX;
+  }
+  .testimon1 .test1 img {
+    height: 75%;
+  }
+  .button3 {
+    background-color: #00adb5;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    font-size: 3rem;
+    border-radius: 10px;
+    margin: 2% auto;
+    font-family: 'Luckiest Guy', cursive;
+    background-color: black;
+  }
+  .button3:hover {
+    background-color: white;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    font-size: 0;
+    border-radius: 10px;
+    margin: 2% auto;
+    font-family: 'Luckiest Guy', cursive;
+  }
+  .button3:hover:before {
+    font-size: 3rem;
+    content: attr(data-hover);
+  }
+}
+@media (max-width: 1000px) and (max-width: 800px) {
+  .one .imgcont {
+    height: 11rem;
+    width: 15rem;
+  }
+  .one .imgcont h2 {
+    display: none;
+  }
+  .one .imgcont h3 {
+    display: none;
+  }
+  .one .imgcont p {
+    display: none;
+  }
+  .one .imgcont ul {
+    display: none;
+  }
+  .home .topContent {
+    margin: 40% 0 0 0;
+  }
+  .home .topContent h2 {
+    font-size: 2rem;
+  }
+  .home .topContent p {
+    font-size: 1.3rem;
+  }
+  .home .topContent .secOne {
+    margin: 2%;
+  }
+  .home .topContent .secOne h2 {
+    color: white;
+    font-family: 'Luckiest Guy', cursive;
+  }
+  .home .topContent .secTwo {
+    margin: 2%;
+  }
+  .home .topContent .secTwo h2 {
+    color: white;
+    font-family: 'Luckiest Guy', cursive;
+  }
+  .home .topContent .secThree {
+    margin: 2%;
+  }
+  .home .topContent .secThree h2 {
+    color: white;
+    font-family: 'Luckiest Guy', cursive;
+  }
+  .home .test {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+    display: flex;
+    width: 50%;
+    height: 180px;
+    border: 2px solid black;
+  }
+  .home .test p {
+    font-size: 1.2rem;
+  }
+  .home .testimon h2 {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 3.5rem;
+    color: black;
+  }
+  .home .testimon .testimon .th2 {
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 40%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 1.7rem;
+    margin: 1%;
+  }
+  .home .middlebtn .button {
+    flex-direction: column;
+    background-color: white;
+    color: #00adb5;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    margin: 0 auto;
+    font-size: 3.5rem;
+    font-family: 'Luckiest Guy', cursive;
+    border-radius: 20px;
+    border: 2px solid black;
+  }
+  .home .middlebtn .button span {
+    font-size: 3rem;
+  }
+  .home .middlebtn .button1 {
+    background-color: black;
+    margin-top: 2%;
+    height: 7rem;
+    font-size: 3rem;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+  }
+  .testimon1 {
+    display: flex;
+    justify-content: center;
+  }
+  .testimon1 .test1 {
+    text-align: center;
+    border: 3px solid black;
+    margin: 5% ;
+    border-radius: 20PX;
+  }
+  .testimon1 .test1 img {
+    height: 75%;
+  }
+}
+@media (max-width: 1000px) and (max-width: 510px) {
+  .one .imgcont {
+    width: 110px;
+    height: 110px;
+  }
+  .one .imgcont .logo3 {
+    width: 80px;
+    height: 80px;
+  }
+  .home .topContent {
+    flex-direction: column;
+  }
+  .home .topContent h2 {
+    font-size: 2rem;
+  }
+  .home .topContent p {
+    font-size: 1.3rem;
+    border: 1px solid black;
+  }
+  .home .topContent .secOne h2 {
+    color: white;
+    font-family: 'Luckiest Guy', cursive;
+    border: 1px solid black;
+  }
+  .home .topContent .secTwo h2 {
+    color: white;
+    font-family: 'Luckiest Guy', cursive;
+    border: 1px solid black;
+  }
+  .home .topContent .secThree h2 {
+    color: white;
+    font-family: 'Luckiest Guy', cursive;
+    border: 1px solid black;
+  }
+  .home .test {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+    display: flex;
+    width: 90%;
+    height: 180px;
+    border: 2px solid black;
+  }
+  .home .test span {
+    font-size: 1.5rem;
+  }
+  .home .test p {
+    font-size: 1.2rem;
+  }
+  .home .testimon h2 {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 3rem;
+    color: black;
+    text-align: center;
+  }
+  .home .testimon .testimon .th2 {
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 40%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 0.5rem;
+    margin: 1%;
+  }
+  .home .middlebtn .button {
+    flex-direction: column;
+    background-color: white;
+    color: #00adb5;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 3rem;
+    font-family: 'Luckiest Guy', cursive;
+    border-radius: 20px;
+    border: 2px solid black;
+  }
+  .home .middlebtn .button span {
+    font-size: 2.5rem;
+  }
+  .home .middlebtn .button1 {
+    background-color: black;
+    margin: 0 auto;
+    margin-top: 2%;
+    height: 5rem;
+    font-size: 2rem;
+    border-radius: 10px;
+    color: white;
+    padding: 12px;
+  }
+  .testimon1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .testimon1 .test1 {
+    width: 90%;
+    text-align: center;
+    border: 3px solid black;
+    margin: 5% ;
+    border-radius: 20PX;
+  }
+  .testimon1 .test1 p {
+    font-size: 4rem;
+  }
+  .testimon1 .test1 img {
+    width: 100%;
+    height: 75%;
+  }
+  .bottomlogo p {
+    font-size: 50rem;
+  }
+}
