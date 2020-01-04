@@ -8,7 +8,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top:20%;
+    margin-top:15%;
     border: 2px solid black;
     border-radius: 25px;
     position: relative;
@@ -16,19 +16,19 @@
   }
  
   .imgcont{
-    border: 1px solid white;
-    margin: -47% 5% 38% 15%;
+    border: 1px solid black;
+    margin: -65% 5% 42% 15%;
     width: 25%;
     height: 25rem;
     background-color: black;
     color: white;
-    font-family: 'Luckiest Guy', cursive;
+    font-family: @solway;
     border-radius: 25px;
     text-align: center;
       
     h2{
       font-size: 3rem;
-      font-family: 'Luckiest Guy', cursive;
+      font-family:  @solway;
       margin: 2%;
     }
     p{
@@ -40,10 +40,10 @@
       
     }
     h3{
-      background-color: @toplink;border: none;
+      background-color: @toplink;
       color: white;
       width: 70%;
-      font-family: 'Luckiest Guy', cursive;
+      font-family:  @solway;
       font-size: 3rem;
       border: 2px solid black;
       border-radius: 10px;
@@ -63,7 +63,8 @@
       .topContent{
         display: flex;
         text-align: center;
-        color: white;
+        color: white;        
+        
         
         
       }
@@ -72,7 +73,7 @@
         margin: 2%;
         h2{
         color: white;
-        font-family: 'Luckiest Guy', cursive;
+        font-family:  @solway;
         }
       }
 
@@ -80,7 +81,7 @@
         margin: 2%;
         h2{
           color: white;
-          font-family: 'Luckiest Guy', cursive;
+          font-family:  @solway;
           }
       }
 
@@ -88,7 +89,7 @@
         margin: 2%;
         h2{
           color: white;
-          font-family: 'Luckiest Guy', cursive;
+          font-family:  @solway;
           }
       }
 
@@ -121,12 +122,59 @@
           }
         }
       }
+
+      .middleaccess{
+        background-image: url(/img/10.jpg);
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        background-color: white;
+        height: 60vh;
+        padding:5rem;
+        border-top: 2px solid @toplink;
+        border-bottom: 2px solid @toplink;
+        
+        
+        .middleaccess2{
+          font-family: @solway;
+        border-radius: 20px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width:50% ;
+        margin: 0 auto;
+        background-color: white;
+        padding:10px;
+        border: 2px solid black;
+        
+        .buttonacc{
+          border: 2px solid black;
+          width: 60%;
+          margin: 0 auto;
+          height: 4rem;
+          padding: 4px;
+          font-size: 3rem;
+          font-family: @forever;
+          background-color: @toplink
+        }
+        
+
+        img{
+          width: 50px;
+          height: 50px;
+          margin: 0 auto;
+        }
+      }
+    }
       .middlebtn{
         display: flex;
         
         h1{
           background-color: white;
-          font-family: 'Kanit', sans-serif;
+          font-family:  @solway;
           text-align: center;
           
           margin: 0 auto;
@@ -146,12 +194,12 @@
         width: 40%;
         margin: 0 auto;
         font-size: 5rem;
-        font-family: 'Luckiest Guy', cursive;
+        font-family:  @solway;
         border-radius: 20px;
         border: 2px solid black;
         
         span{
-          font-family: 'Fredericka the Great', cursive;
+          font-family:  @forever;
           font-size: 9rem;
           
         }
@@ -186,14 +234,14 @@
         align-items: center;
         margin: 2% 0 0 0;
         h2{
-          font-family: 'Luckiest Guy', cursive;
+          font-family: @solway;
           font-size: 5rem;
           color: black;
         }
         h6{
           background-color:black;
           color: white;
-          height: 50px;
+          // height: 50px;
           width: 40%;
           text-align: center;
           padding: 15px 20px;
@@ -261,14 +309,14 @@
   }
 
   h2{
-    font-family: 'Luckiest Guy', cursive;
+    font-family:  @solway;
     font-size: 5rem;
     color: black;
   }
 
   p{
     font-size: 3rem;
-    font-family: 'Luckiest Guy', cursive;
+    font-family:  @solway;
   }
   
   
@@ -277,8 +325,7 @@
 
 
 .button3 {
-  background-color: @toplink;border: none;
-  color: white;
+  background-color: @toplink;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -290,8 +337,9 @@
   border-radius: 10px;
   margin: 2% auto;
   
-  font-family: 'Luckiest Guy', cursive;
+  font-family: @solway;
   background-color: black;
+  color: white;
   
 }
 
@@ -309,7 +357,7 @@
   border-radius: 10px;
   margin: 2% auto;
   
-  font-family: 'Luckiest Guy', cursive;
+  font-family:  @solway;
   
 }
 
@@ -318,13 +366,6 @@
   content: attr(data-hover);
 }
 
-
-
-
-
-
-
-     
 @media (min-width: 1001px){
   .logo3{
     display: none;
@@ -335,6 +376,9 @@
   }
 }
 @media (max-width: 1000px){
+  // .middleaccess2 .middleaccess2{
+  //   width: 5%;
+  // }
   .topContent{
     margin: 15% 0 0 0;
   }
@@ -345,12 +389,12 @@
 
   .one .imgcont{
     border: 1px solid black;
-    margin: -47% 5% 10% 15%;
+    margin: -62% 5% 10% 15%;
     width: 25%;
-    height: 35rem;
+    height: 37rem;
     background-color: black;
     color: white;
-    font-family: 'Luckiest Guy', cursive;
+    font-family:  @solway;
     border-radius: 25px;
     text-align: center;
 
@@ -361,8 +405,8 @@
     
     h2{
       font-size: 3rem;
-      font-family: 'Luckiest Guy', cursive;
-      margin: 2%;
+      font-family:  @solway;
+      margin: -10% 0 0 0;
     }
     p{
       margin: 2%;
@@ -376,7 +420,7 @@
       background-color: @toplink;
       color: white;
       width: 70%;
-      font-family: 'Luckiest Guy', cursive;
+      font-family:  @solway;
       font-size: 3rem;
       border: 2px solid black;
       border-radius: 10px;
@@ -385,12 +429,19 @@
     
   }
     .home{
+    
+  }
+
+
+      .topContent{
+        margin-top: 20%;
+      }
    
 
     .testimon .th2{
       background-color:black;
           color: white;
-          height: 50px;
+          height: 70px;
           width: 40%;
           text-align: center;
           padding: 10px;
@@ -414,7 +465,7 @@
           width: 40%;
           margin: 0 auto;
           font-size: 3rem;
-          font-family: 'Luckiest Guy', cursive;
+          font-family:  @solway;
           border-radius: 20px;
           border: 2px solid black;
         }
@@ -458,7 +509,7 @@
     }
 }
     .button3 {
-      background-color: @toplink;border: none;
+      background-color: @toplink;
       color: white;
       padding: 15px 32px;
       text-align: center;
@@ -471,7 +522,7 @@
       border-radius: 10px;
       margin: 2% auto;
       
-      font-family: 'Luckiest Guy', cursive;
+      font-family:  @solway;
       background-color: black;
       
     }
@@ -490,7 +541,7 @@
       border-radius: 10px;
       margin: 2% auto;
       
-      font-family: 'Luckiest Guy', cursive;
+      font-family:  @solway;
       
     }
     
@@ -499,12 +550,13 @@
       content: attr(data-hover);
     }
 
-
-
+  
+  
 @media (max-width: 800px){
   .one .imgcont{
     height: 11rem;
     width: 15rem;
+    
 
     h2{
       display: none;
@@ -520,6 +572,9 @@
     }
   }
 .home{
+  .middleaccess .middleaccess2{
+    width: 80%;
+  }
  
   .topContent{
     margin: 40% 0 0 0;
@@ -534,7 +589,7 @@
       margin: 2%;
       h2{
       color: white;
-      font-family: 'Luckiest Guy', cursive;
+      font-family:  @solway;
       
       }
      
@@ -544,7 +599,7 @@
       margin: 2%;
       h2{
         color: white;
-        font-family: 'Luckiest Guy', cursive;
+        font-family:  @solway;
         
         }
     }
@@ -553,7 +608,7 @@
       margin: 2%;
       h2{
         color: white;
-        font-family: 'Luckiest Guy', cursive;
+        font-family:  @solway;
         
         }
     }
@@ -576,7 +631,7 @@
   
    .testimon{
       h2{
-        font-family: 'Luckiest Guy', cursive;
+        font-family:  @solway;
         font-size: 3.5rem;
         color: black;
       }
@@ -593,7 +648,8 @@
      
    }
   }
-       .middlebtn{
+        .middlebtn{
+          
 
        .button {
          flex-direction: column;
@@ -604,16 +660,16 @@
          text-decoration: none;
          display: flex;
          justify-content: center;
-         width: 40%;
+         width: 80%;
          margin: 0 auto;
          font-size: 3.5rem;
-         font-family: 'Luckiest Guy', cursive;
+         font-family:  @solway;
          border-radius: 20px;
          border: 2px solid black;
        }
      
         .button span{       
-       font-size: 3rem;
+       font-size: 5rem;
 
      }
 
@@ -624,7 +680,7 @@
       font-size: 3rem;
       border-radius: 10px;
       color: white;
-      padding: 10px;
+      padding: 10px ;
     }
    }
    
@@ -649,13 +705,14 @@
      
 }
 
-
-
-
 @media (max-width: 510px){
+  .bigimg{
+    margin-top: 50%;
+  }
   .one .imgcont{
     width: 110px;
     height: 110px;
+    
   }
   .one .imgcont .logo3{
     width: 80px;
@@ -669,14 +726,14 @@
       }
       p{
         font-size: 1.3rem;
-        border:1px solid black;
+        // border:1px solid black;
       }
       .secOne {
         
         h2{
         color: white;
-        font-family: 'Luckiest Guy', cursive;
-        border: 1px solid black;
+        font-family:  @solway;
+        // border: 1px solid black;
         }
        
       }
@@ -685,8 +742,8 @@
         
         h2{
           color: white;
-          font-family: 'Luckiest Guy', cursive;
-          border: 1px solid black;
+          font-family:  @solway;
+          // border: 1px solid black;
           }
       }
   
@@ -694,8 +751,8 @@
         
         h2{
           color: white;
-          font-family: 'Luckiest Guy', cursive;
-          border: 1px solid black;
+          font-family:  @solway;
+          // border: 1px solid black;
           }
       }
     }
@@ -726,7 +783,7 @@
       
       .testimon{
         h2{
-          font-family: 'Luckiest Guy', cursive;
+          font-family:  @solway;
           font-size: 3rem;
           color: black;
           text-align: center;
@@ -759,13 +816,13 @@
            width: 90%;
            margin: 0 auto;
            font-size: 3rem;
-           font-family: 'Luckiest Guy', cursive;
+           font-family:  @solway;
            border-radius: 20px;
            border: 2px solid black;
          }
        
         .button span{
-           font-size: 2.5rem;
+           font-size: 5rem;
   
        }
   
@@ -813,4 +870,3 @@
         }   
   }
   
-}

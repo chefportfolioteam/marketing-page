@@ -1,3 +1,73 @@
+@font-face {
+  font-family: 'Solway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Solway Regular'), local('Solway-Regular'), url(https://fonts.gstatic.com/s/solway/v1/AMOQz46Cs2uTAOCmhXo5.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Bitter Regular'), local('Bitter-Regular'), url(https://fonts.gstatic.com/s/bitter/v15/rax8HiqOu8IVPmn7f4xs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Solway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Solway Regular'), local('Solway-Regular'), url(https://fonts.gstatic.com/s/solway/v1/AMOQz46Cs2uTAOCmhXo5.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Bitter Regular'), local('Bitter-Regular'), url(https://fonts.gstatic.com/s/bitter/v15/rax8HiqOu8IVPmn7f4xs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Eczar';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Eczar Regular'), local('Eczar-Regular'), url(https://fonts.gstatic.com/s/eczar/v8/BXRlvF3Pi-DLmz0lDOs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Solway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Solway Regular'), local('Solway-Regular'), url(https://fonts.gstatic.com/s/solway/v1/AMOQz46Cs2uTAOCmhXo5.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Bitter Regular'), local('Bitter-Regular'), url(https://fonts.gstatic.com/s/bitter/v15/rax8HiqOu8IVPmn7f4xs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Eczar';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Eczar Regular'), local('Eczar-Regular'), url(https://fonts.gstatic.com/s/eczar/v8/BXRlvF3Pi-DLmz0lDOs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Solway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Solway Regular'), local('Solway-Regular'), url(https://fonts.gstatic.com/s/solway/v1/AMOQz46Cs2uTAOCmhXo5.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Spicy Rice';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Spicy Rice'), local('SpicyRice-Regular'), url(https://fonts.gstatic.com/s/spicyrice/v8/uK_24rSEd-Uqwk4jY1RyKvi8Xg.ttf) format('truetype');
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -133,17 +203,6 @@ html {
   font-size: 62.5%;
   background-image: linear-gradient(#00adb5, #eeeeee);
 }
-html,
-body {
-  font-family: 'Roboto', sans-serif;
-}
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: 'Indie Flower', cursive;
-}
 h1 {
   font-size: 4rem;
 }
@@ -206,6 +265,7 @@ p {
   width: 100%;
   height: 130px;
   border-bottom: 2px solid #00adb5;
+  z-index: 11;
 }
 @media (max-width: 1000px) {
   .logo {
@@ -216,20 +276,29 @@ p {
     margin: 0 100% 0 0;
   }
 }
-.footer {
-  width: 100%;
+.footer-distributed {
   border-top: 2px solid #00adb5;
-  background: black;
-}
-.footer p {
-  text-align: center;
+  height: 40vh;
+  background-color: black;
   color: white;
-  font-size: 1.6rem;
-  padding: 20px;
 }
-.footer .logobottom {
-  display: block;
-  margin: 0 auto;
+.footer-distributed .footer-left {
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer-distributed .footer-left a {
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+}
+.footer-distributed .logofooter {
+  display: flex;
+  justify-content: center;
+}
+.footer-distributed .footer-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 @font-face {
   font-family: 'Kanit';
@@ -292,26 +361,26 @@ p {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20%;
+  margin-top: 15%;
   border: 2px solid black;
   border-radius: 25px;
   position: relative;
   z-index: -1;
 }
 .one .imgcont {
-  border: 1px solid white;
-  margin: -47% 5% 38% 15%;
+  border: 1px solid black;
+  margin: -65% 5% 42% 15%;
   width: 25%;
   height: 25rem;
   background-color: black;
   color: white;
-  font-family: 'Luckiest Guy', cursive;
+  font-family: 'Eczar', serif;
   border-radius: 25px;
   text-align: center;
 }
 .one .imgcont h2 {
   font-size: 3rem;
-  font-family: 'Luckiest Guy', cursive;
+  font-family: 'Eczar', serif;
   margin: 2%;
 }
 .one .imgcont p {
@@ -323,10 +392,9 @@ p {
 }
 .one .imgcont h3 {
   background-color: #00adb5;
-  border: none;
   color: white;
   width: 70%;
-  font-family: 'Luckiest Guy', cursive;
+  font-family: 'Eczar', serif;
   font-size: 3rem;
   border: 2px solid black;
   border-radius: 10px;
@@ -347,21 +415,21 @@ p {
 }
 .home .secOne h2 {
   color: white;
-  font-family: 'Luckiest Guy', cursive;
+  font-family: 'Eczar', serif;
 }
 .home .secTwo {
   margin: 2%;
 }
 .home .secTwo h2 {
   color: white;
-  font-family: 'Luckiest Guy', cursive;
+  font-family: 'Eczar', serif;
 }
 .home .secThree {
   margin: 2%;
 }
 .home .secThree h2 {
   color: white;
-  font-family: 'Luckiest Guy', cursive;
+  font-family: 'Eczar', serif;
 }
 .home .topHeader {
   width: 100%;
@@ -383,12 +451,53 @@ p {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+.home .middleaccess {
+  background-image: url(/img/10.jpg);
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-color: white;
+  height: 60vh;
+  padding: 5rem;
+  border-top: 2px solid #00adb5;
+  border-bottom: 2px solid #00adb5;
+}
+.home .middleaccess .middleaccess2 {
+  font-family: 'Eczar', serif;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 50% ;
+  margin: 0 auto;
+  background-color: white;
+  padding: 10px;
+  border: 2px solid black;
+}
+.home .middleaccess .middleaccess2 .buttonacc {
+  border: 2px solid black;
+  width: 60%;
+  margin: 0 auto;
+  height: 4rem;
+  padding: 4px;
+  font-size: 3rem;
+  font-family: 'Spicy Rice', cursive;
+  background-color: #00adb5;
+}
+.home .middleaccess .middleaccess2 img {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
 .home .middlebtn {
   display: flex;
 }
 .home .middlebtn h1 {
   background-color: white;
-  font-family: 'Kanit', sans-serif;
+  font-family: 'Eczar', serif;
   text-align: center;
   margin: 0 auto;
   font-size: 5rem;
@@ -406,12 +515,12 @@ p {
   width: 40%;
   margin: 0 auto;
   font-size: 5rem;
-  font-family: 'Luckiest Guy', cursive;
+  font-family: 'Eczar', serif;
   border-radius: 20px;
   border: 2px solid black;
 }
 .home .middlebtn .button span {
-  font-family: 'Fredericka the Great', cursive;
+  font-family: 'Spicy Rice', cursive;
   font-size: 9rem;
 }
 .home .middlebtn .button:hover,
@@ -440,14 +549,13 @@ p {
   margin: 2% 0 0 0;
 }
 .home .testimon h2 {
-  font-family: 'Luckiest Guy', cursive;
+  font-family: 'Eczar', serif;
   font-size: 5rem;
   color: black;
 }
 .home .testimon h6 {
   background-color: black;
   color: white;
-  height: 50px;
   width: 40%;
   text-align: center;
   padding: 15px 20px;
@@ -494,18 +602,16 @@ p {
   border-radius: 18PX;
 }
 .testimon1 h2 {
-  font-family: 'Luckiest Guy', cursive;
+  font-family: 'Eczar', serif;
   font-size: 5rem;
   color: black;
 }
 .testimon1 p {
   font-size: 3rem;
-  font-family: 'Luckiest Guy', cursive;
+  font-family: 'Eczar', serif;
 }
 .button3 {
   background-color: #00adb5;
-  border: none;
-  color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -515,8 +621,9 @@ p {
   font-size: 3rem;
   border-radius: 10px;
   margin: 2% auto;
-  font-family: 'Luckiest Guy', cursive;
+  font-family: 'Eczar', serif;
   background-color: black;
+  color: white;
 }
 .button3:hover {
   background-color: white;
@@ -530,7 +637,7 @@ p {
   font-size: 0;
   border-radius: 10px;
   margin: 2% auto;
-  font-family: 'Luckiest Guy', cursive;
+  font-family: 'Eczar', serif;
 }
 .button3:hover:before {
   font-size: 3rem;
@@ -553,12 +660,12 @@ p {
   }
   .one .imgcont {
     border: 1px solid black;
-    margin: -47% 5% 10% 15%;
+    margin: -62% 5% 10% 15%;
     width: 25%;
-    height: 35rem;
+    height: 37rem;
     background-color: black;
     color: white;
-    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Eczar', serif;
     border-radius: 25px;
     text-align: center;
   }
@@ -568,8 +675,8 @@ p {
   }
   .one .imgcont h2 {
     font-size: 3rem;
-    font-family: 'Luckiest Guy', cursive;
-    margin: 2%;
+    font-family: 'Eczar', serif;
+    margin: -10% 0 0 0;
   }
   .one .imgcont p {
     margin: 2%;
@@ -582,16 +689,19 @@ p {
     background-color: #00adb5;
     color: white;
     width: 70%;
-    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Eczar', serif;
     font-size: 3rem;
     border: 2px solid black;
     border-radius: 10px;
     margin: 7% auto;
   }
-  .home .testimon .th2 {
+  .topContent {
+    margin-top: 20%;
+  }
+  .testimon .th2 {
     background-color: black;
     color: white;
-    height: 50px;
+    height: 70px;
     width: 40%;
     text-align: center;
     padding: 10px;
@@ -599,7 +709,7 @@ p {
     font-size: 1.7rem;
     margin: 1%;
   }
-  .home .middlebtn .button {
+  .middlebtn .button {
     flex-direction: column;
     background-color: white;
     color: #00adb5;
@@ -611,14 +721,14 @@ p {
     width: 40%;
     margin: 0 auto;
     font-size: 3rem;
-    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Eczar', serif;
     border-radius: 20px;
     border: 2px solid black;
   }
-  .home .middlebtn .button span {
+  .middlebtn .button span {
     font-size: 6rem;
   }
-  .home .middlebtn .button1 {
+  .middlebtn .button1 {
     background-color: black;
     margin: 0 auto;
     margin-top: 2%;
@@ -628,60 +738,59 @@ p {
     color: white;
     padding: 12px;
   }
-  .testimon1 {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-  .testimon1 p {
-    font-size: 2rem;
-  }
-  .testimon1 .test1 {
-    text-align: center;
-    width: 100%;
-    border: 3px solid black;
-    margin: 5% ;
-    border-radius: 20PX;
-  }
-  .testimon1 .test1 img {
-    height: 75%;
-  }
-  .button3 {
-    background-color: #00adb5;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    width: 70%;
-    font-size: 3rem;
-    border-radius: 10px;
-    margin: 2% auto;
-    font-family: 'Luckiest Guy', cursive;
-    background-color: black;
-  }
-  .button3:hover {
-    background-color: white;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    width: 70%;
-    font-size: 0;
-    border-radius: 10px;
-    margin: 2% auto;
-    font-family: 'Luckiest Guy', cursive;
-  }
-  .button3:hover:before {
-    font-size: 3rem;
-    content: attr(data-hover);
-  }
 }
-@media (max-width: 1000px) and (max-width: 800px) {
+.testimon1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.testimon1 p {
+  font-size: 2rem;
+}
+.testimon1 .test1 {
+  text-align: center;
+  width: 100%;
+  border: 3px solid black;
+  margin: 5% ;
+  border-radius: 20PX;
+}
+.testimon1 .test1 img {
+  height: 75%;
+}
+.button3 {
+  background-color: #00adb5;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  font-size: 3rem;
+  border-radius: 10px;
+  margin: 2% auto;
+  font-family: 'Eczar', serif;
+  background-color: black;
+}
+.button3:hover {
+  background-color: white;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  font-size: 0;
+  border-radius: 10px;
+  margin: 2% auto;
+  font-family: 'Eczar', serif;
+}
+.button3:hover:before {
+  font-size: 3rem;
+  content: attr(data-hover);
+}
+@media (max-width: 800px) {
   .one .imgcont {
     height: 11rem;
     width: 15rem;
@@ -698,6 +807,9 @@ p {
   .one .imgcont ul {
     display: none;
   }
+  .home .middleaccess .middleaccess2 {
+    width: 80%;
+  }
   .home .topContent {
     margin: 40% 0 0 0;
   }
@@ -712,21 +824,21 @@ p {
   }
   .home .topContent .secOne h2 {
     color: white;
-    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Eczar', serif;
   }
   .home .topContent .secTwo {
     margin: 2%;
   }
   .home .topContent .secTwo h2 {
     color: white;
-    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Eczar', serif;
   }
   .home .topContent .secThree {
     margin: 2%;
   }
   .home .topContent .secThree h2 {
     color: white;
-    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Eczar', serif;
   }
   .home .test {
     border: 2px solid #ccc;
@@ -743,7 +855,7 @@ p {
     font-size: 1.2rem;
   }
   .home .testimon h2 {
-    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Eczar', serif;
     font-size: 3.5rem;
     color: black;
   }
@@ -767,15 +879,15 @@ p {
     text-decoration: none;
     display: flex;
     justify-content: center;
-    width: 40%;
+    width: 80%;
     margin: 0 auto;
     font-size: 3.5rem;
-    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Eczar', serif;
     border-radius: 20px;
     border: 2px solid black;
   }
   .home .middlebtn .button span {
-    font-size: 3rem;
+    font-size: 5rem;
   }
   .home .middlebtn .button1 {
     background-color: black;
@@ -784,7 +896,7 @@ p {
     font-size: 3rem;
     border-radius: 10px;
     color: white;
-    padding: 10px;
+    padding: 10px ;
   }
   .testimon1 {
     display: flex;
@@ -800,7 +912,10 @@ p {
     height: 75%;
   }
 }
-@media (max-width: 1000px) and (max-width: 510px) {
+@media (max-width: 510px) {
+  .bigimg {
+    margin-top: 50%;
+  }
   .one .imgcont {
     width: 110px;
     height: 110px;
@@ -817,22 +932,18 @@ p {
   }
   .home .topContent p {
     font-size: 1.3rem;
-    border: 1px solid black;
   }
   .home .topContent .secOne h2 {
     color: white;
-    font-family: 'Luckiest Guy', cursive;
-    border: 1px solid black;
+    font-family: 'Eczar', serif;
   }
   .home .topContent .secTwo h2 {
     color: white;
-    font-family: 'Luckiest Guy', cursive;
-    border: 1px solid black;
+    font-family: 'Eczar', serif;
   }
   .home .topContent .secThree h2 {
     color: white;
-    font-family: 'Luckiest Guy', cursive;
-    border: 1px solid black;
+    font-family: 'Eczar', serif;
   }
   .home .test {
     border: 2px solid #ccc;
@@ -852,7 +963,7 @@ p {
     font-size: 1.2rem;
   }
   .home .testimon h2 {
-    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Eczar', serif;
     font-size: 3rem;
     color: black;
     text-align: center;
@@ -880,12 +991,12 @@ p {
     width: 90%;
     margin: 0 auto;
     font-size: 3rem;
-    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Eczar', serif;
     border-radius: 20px;
     border: 2px solid black;
   }
   .home .middlebtn .button span {
-    font-size: 2.5rem;
+    font-size: 5rem;
   }
   .home .middlebtn .button1 {
     background-color: black;
@@ -918,5 +1029,174 @@ p {
   }
   .bottomlogo p {
     font-size: 50rem;
+  }
+}
+.imgover .bigimg1 {
+  width: 50%;
+  margin-bottom: 5%;
+}
+.abouttestimon3 {
+  margin: 5%;
+}
+.abouttestimon3 h2 {
+  margin: 2%;
+}
+.one img {
+  margin-bottom: 15%;
+}
+.abouttestimon h1 {
+  margin: 3%;
+}
+.aboutpage {
+  text-align: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Eczar', serif;
+}
+.aboutpage h2 {
+  font-family: 'Spicy Rice', cursive;
+}
+.aboutpage .abouttestimon1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+}
+.aboutpage .abouttestimon1 .abouttest1 {
+  text-align: center;
+  border: 3px solid black;
+  margin: 0 auto;
+  margin-bottom: 1%;
+  border-radius: 20px;
+}
+.aboutpage .abouttestimon1 .aboutbottomlogo {
+  width: 100%;
+  height: 20rem;
+  border-radius: 18PX;
+}
+.aboutpage .abouttestimon1 p {
+  font-size: 2rem;
+}
+.bigimg1 {
+  width: 50%;
+  margin-bottom: 5%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 15%;
+  border-radius: 25px;
+  position: relative;
+  z-index: -1;
+}
+@media (max-width: 1000px) {
+  .oneabout .bigimg1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30%;
+    z-index: 1;
+  }
+  .abouttestimon3 h1 {
+    margin: 5%;
+  }
+}
+@media (max-width: 1000px) {
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container3 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem auto;
+  margin: 2%;
+}
+.bg,
+.overlay {
+  text-align: center;
+}
+img,
+.overlay {
+  transition: 0.3s all;
+  border-radius: 3px;
+}
+.abouttestimon3 {
+  text-align: center;
+  font-family: 'Eczar', serif;
+}
+.abouttestimon3 h2 {
+  font-family: 'Spicy Rice', cursive;
+}
+.bg {
+  justify-content: center;
+  float: left;
+  max-width: 100%;
+  position: relative;
+  margin: 0.5%;
+}
+.bg img {
+  height: 35rem;
+  margin-bottom: -4px;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+.bg .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 35rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  opacity: 0;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+.bg .overlay h2 {
+  padding-top: 20%;
+  font-family: 'Droid Serif', serif;
+}
+.bg .overlay p {
+  font-family: 'Julius Sans One', sans-serif;
+}
+.bg:hover .overlay {
+  opacity: 1;
+}
+.bg:hover img {
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+}
+.aboutButton {
+  background-color: #00adb5;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-top: 2%;
+  height: 5rem;
+}
+.aboutButton h1 {
+  color: white;
+}
+.aboutButton a {
+  text-decoration: none;
+}
+@media screen and (max-width: 1148px) {
+  .bg {
+    max-width: 48%;
+    margin: 1%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .bg {
+    float: none;
+    max-width: 80%;
+    margin: 1% auto;
   }
 }
