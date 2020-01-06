@@ -68,6 +68,62 @@
   font-display: swap;
   src: local('Spicy Rice'), local('SpicyRice-Regular'), url(https://fonts.gstatic.com/s/spicyrice/v8/uK_24rSEd-Uqwk4jY1RyKvi8Xg.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Kanit Regular'), local('Kanit-Regular'), url(https://fonts.gstatic.com/s/kanit/v5/nKKZ-Go6G5tXcraVGwU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Kanit Regular'), local('Kanit-Regular'), url(https://fonts.gstatic.com/s/kanit/v5/nKKZ-Go6G5tXcraVGwU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Luckiest Guy';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Luckiest Guy Regular'), local('LuckiestGuy-Regular'), url(https://fonts.gstatic.com/s/luckiestguy/v10/_gP_1RrxsjcxVyin9l9n_j2hTd5z.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Righteous';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Righteous'), local('Righteous-Regular'), url(https://fonts.gstatic.com/s/righteous/v8/1cXxaUPXBpj2rGoU7C9WiHGA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Fredericka the Great';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Fredericka the Great'), local('FrederickatheGreat'), url(https://fonts.gstatic.com/s/frederickathegreat/v9/9Bt33CxNwt7aOctW2xjbCstzwVKsIBVV--SjxbI.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Kanit Regular'), local('Kanit-Regular'), url(https://fonts.gstatic.com/s/kanit/v5/nKKZ-Go6G5tXcraVGwU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Luckiest Guy';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Luckiest Guy Regular'), local('LuckiestGuy-Regular'), url(https://fonts.gstatic.com/s/luckiestguy/v10/_gP_1RrxsjcxVyin9l9n_j2hTd5z.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Righteous';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Righteous'), local('Righteous-Regular'), url(https://fonts.gstatic.com/s/righteous/v8/1cXxaUPXBpj2rGoU7C9WiHGA.ttf) format('truetype');
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -278,7 +334,7 @@ p {
 }
 .footer-distributed {
   border-top: 2px solid #00adb5;
-  height: 40vh;
+  height: 10vh;
   background-color: black;
   color: white;
 }
@@ -299,62 +355,6 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-}
-@font-face {
-  font-family: 'Kanit';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Kanit Regular'), local('Kanit-Regular'), url(https://fonts.gstatic.com/s/kanit/v5/nKKZ-Go6G5tXcraVGwU.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Kanit';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Kanit Regular'), local('Kanit-Regular'), url(https://fonts.gstatic.com/s/kanit/v5/nKKZ-Go6G5tXcraVGwU.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Luckiest Guy';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Luckiest Guy Regular'), local('LuckiestGuy-Regular'), url(https://fonts.gstatic.com/s/luckiestguy/v10/_gP_1RrxsjcxVyin9l9n_j2hTd5z.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Righteous';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Righteous'), local('Righteous-Regular'), url(https://fonts.gstatic.com/s/righteous/v8/1cXxaUPXBpj2rGoU7C9WiHGA.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Fredericka the Great';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Fredericka the Great'), local('FrederickatheGreat'), url(https://fonts.gstatic.com/s/frederickathegreat/v9/9Bt33CxNwt7aOctW2xjbCstzwVKsIBVV--SjxbI.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Kanit';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Kanit Regular'), local('Kanit-Regular'), url(https://fonts.gstatic.com/s/kanit/v5/nKKZ-Go6G5tXcraVGwU.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Luckiest Guy';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Luckiest Guy Regular'), local('LuckiestGuy-Regular'), url(https://fonts.gstatic.com/s/luckiestguy/v10/_gP_1RrxsjcxVyin9l9n_j2hTd5z.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Righteous';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Righteous'), local('Righteous-Regular'), url(https://fonts.gstatic.com/s/righteous/v8/1cXxaUPXBpj2rGoU7C9WiHGA.ttf) format('truetype');
 }
 .one .bigimg {
   width: 80%;
@@ -452,7 +452,7 @@ p {
   border-radius: 10px;
 }
 .home .middleaccess {
-  background-image: url(/img/10.jpg);
+  background-image: url(http://josefetheridge.com/marketing-page/img/10.jpg);
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
@@ -472,10 +472,11 @@ p {
   justify-content: center;
   text-align: center;
   width: 50% ;
-  margin: 0 auto;
+  margin: 7% auto;
   background-color: white;
   padding: 10px;
   border: 2px solid black;
+  opacity: 0.8;
 }
 .home .middleaccess .middleaccess2 .buttonacc {
   border: 2px solid black;
@@ -542,73 +543,39 @@ p {
   color: black;
   background-color: white;
 }
+.home .testimontop {
+  text-align: center;
+  margin-top: 2%;
+}
 .home .testimon {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 2% 0 0 0;
+  justify-content: space-evenly;
+  margin: 2%;
 }
-.home .testimon h2 {
-  font-family: 'Eczar', serif;
-  font-size: 5rem;
-  color: black;
-}
-.home .testimon h6 {
-  background-color: black;
-  color: white;
-  width: 40%;
+.home .testimon .test {
   text-align: center;
-  padding: 15px 20px;
-  border-radius: 20px;
-  font-size: 1.7rem;
 }
-.home .test {
-  border: 2px solid #ccc;
-  background-color: #eee;
-  border-radius: 5px;
-  padding: 16px;
-  margin: 16px 0;
-  display: flex;
-  width: 50%;
-  border: 2px solid black;
-}
-.home .test::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-.home .test img {
-  float: left;
-  margin-right: 20px;
+.home .testimon img {
+  box-shadow: 10px 5px 10px black;
   border-radius: 50%;
+  margin-bottom: 2%;
 }
-.home .test span {
-  font-size: 20px;
-  margin-right: 15px;
+.home .testimon p {
+  text-align: center;
+  margin: 3%;
 }
 .testimon1 {
-  display: flex;
-  justify-content: center;
+  font-family: 'Eczar', serif;
 }
-.testimon1 .test1 {
+.test1 {
   text-align: center;
-  border: 3px solid black;
   margin: 5% ;
   border-radius: 20PX;
 }
-.testimon1 .bottomlogo {
+.bottomlogo {
   width: 100%;
   height: 20rem;
   border-radius: 18PX;
-}
-.testimon1 h2 {
-  font-family: 'Eczar', serif;
-  font-size: 5rem;
-  color: black;
-}
-.testimon1 p {
-  font-size: 3rem;
-  font-family: 'Eczar', serif;
 }
 .button3 {
   background-color: #00adb5;
@@ -750,7 +717,6 @@ p {
 .testimon1 .test1 {
   text-align: center;
   width: 100%;
-  border: 3px solid black;
   margin: 5% ;
   border-radius: 20PX;
 }
@@ -765,7 +731,7 @@ p {
   text-decoration: none;
   display: flex;
   justify-content: center;
-  width: 70%;
+  width: 30%;
   font-size: 3rem;
   border-radius: 10px;
   margin: 2% auto;
@@ -780,7 +746,7 @@ p {
   text-decoration: none;
   display: flex;
   justify-content: center;
-  width: 70%;
+  width: 30%;
   font-size: 0;
   border-radius: 10px;
   margin: 2% auto;
@@ -790,7 +756,7 @@ p {
   font-size: 3rem;
   content: attr(data-hover);
 }
-@media (max-width: 800px) {
+@media ( max-width: 800px) {
   .one .imgcont {
     height: 11rem;
     width: 15rem;
@@ -840,36 +806,6 @@ p {
     color: white;
     font-family: 'Eczar', serif;
   }
-  .home .test {
-    border: 2px solid #ccc;
-    background-color: #eee;
-    border-radius: 5px;
-    padding: 16px;
-    margin: 16px 0;
-    display: flex;
-    width: 50%;
-    height: 180px;
-    border: 2px solid black;
-  }
-  .home .test p {
-    font-size: 1.2rem;
-  }
-  .home .testimon h2 {
-    font-family: 'Eczar', serif;
-    font-size: 3.5rem;
-    color: black;
-  }
-  .home .testimon .testimon .th2 {
-    background-color: black;
-    color: white;
-    height: 50px;
-    width: 40%;
-    text-align: center;
-    padding: 10px;
-    border-radius: 20px;
-    font-size: 1.7rem;
-    margin: 1%;
-  }
   .home .middlebtn .button {
     flex-direction: column;
     background-color: white;
@@ -904,7 +840,6 @@ p {
   }
   .testimon1 .test1 {
     text-align: center;
-    border: 3px solid black;
     margin: 5% ;
     border-radius: 20PX;
   }
@@ -912,7 +847,7 @@ p {
     height: 75%;
   }
 }
-@media (max-width: 510px) {
+@media ( max-width: 500px ) {
   .bigimg {
     margin-top: 50%;
   }
@@ -923,6 +858,9 @@ p {
   .one .imgcont .logo3 {
     width: 80px;
     height: 80px;
+  }
+  .home .middleaccess p {
+    display: none;
   }
   .home .topContent {
     flex-direction: column;
@@ -945,39 +883,13 @@ p {
     color: white;
     font-family: 'Eczar', serif;
   }
-  .home .test {
-    border: 2px solid #ccc;
-    background-color: #eee;
-    border-radius: 5px;
-    padding: 16px;
-    margin: 16px 0;
+  .home .testimon {
     display: flex;
-    width: 90%;
-    height: 180px;
-    border: 2px solid black;
-  }
-  .home .test span {
-    font-size: 1.5rem;
-  }
-  .home .test p {
-    font-size: 1.2rem;
-  }
-  .home .testimon h2 {
-    font-family: 'Eczar', serif;
-    font-size: 3rem;
-    color: black;
+    flex-direction: column;
     text-align: center;
   }
-  .home .testimon .testimon .th2 {
-    background-color: black;
-    color: white;
-    height: 50px;
-    width: 40%;
-    text-align: center;
-    padding: 10px;
-    border-radius: 20px;
-    font-size: 0.5rem;
-    margin: 1%;
+  .home .testimon img {
+    margin: 2%;
   }
   .home .middlebtn .button {
     flex-direction: column;
@@ -1016,12 +928,12 @@ p {
   .testimon1 .test1 {
     width: 90%;
     text-align: center;
-    border: 3px solid black;
     margin: 5% ;
     border-radius: 20PX;
   }
   .testimon1 .test1 p {
     font-size: 4rem;
+    font-family: 'Eczar', serif;
   }
   .testimon1 .test1 img {
     width: 100%;
