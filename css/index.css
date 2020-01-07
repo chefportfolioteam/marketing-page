@@ -1,4 +1,18 @@
 @font-face {
+  font-family: 'Charmonman';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Charmonman Regular'), local('Charmonman-Regular'), url(https://fonts.gstatic.com/s/charmonman/v3/MjQDmiR3vP_nuxDv47jiaJaiuA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Itim';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Itim'), local('Itim-Regular'), url(https://fonts.gstatic.com/s/itim/v4/0nknC9ziJOYe8ANAlQ.ttf) format('truetype');
+}
+@font-face {
   font-family: 'Solway';
   font-style: normal;
   font-weight: 400;
@@ -547,10 +561,18 @@ p {
   text-align: center;
   margin-top: 2%;
 }
+.home .testimontop h2 {
+  font-family: 'Itim', cursive;
+  font-size: 5rem;
+}
 .home .testimon {
   display: flex;
   justify-content: space-evenly;
   margin: 2%;
+}
+.home .testimon h2 {
+  font-size: 5rem;
+  font-family: 'Itim', cursive;
 }
 .home .testimon .test {
   text-align: center;
@@ -712,7 +734,7 @@ p {
   width: 100%;
 }
 .testimon1 p {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .testimon1 .test1 {
   text-align: center;
