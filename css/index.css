@@ -810,6 +810,9 @@ p {
     border-radius: 5px;
     padding: 8px;
   }
+  .home .middleaccess .middleaccess2 p {
+    display: none;
+  }
   .home .topContent {
     margin: 40% 0 0 0;
   }
