@@ -1119,13 +1119,13 @@ img,
   filter: blur(2px);
 }
 .aboutButton {
-  background-color: #00adb5;
+  
   width: 100%;
-  border: 1px solid black;
+ 
   border-radius: 15px;
   margin: 0 auto;
   margin-top: 2%;
-  height: 5rem;
+
 }
 .aboutButton h1 {
   color: white;
